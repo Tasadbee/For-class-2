@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 body{
+    position: relative;
     font-family: Arial, Helvetica, sans-serif;
 }
 .container{
@@ -13,6 +14,9 @@ body{
 .header{
     position: fixed;
     width: 100%;
+    z-index: 8;
+    
+
 }
 .nav__bar{
     display: flex;
@@ -48,7 +52,6 @@ body{
     background-image: url(../img/herobgimg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 .hero__second{
     padding-top: 200px;
@@ -57,6 +60,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top ;
+    
     
 }
 .hero__third{
@@ -99,8 +103,113 @@ body{
     margin-left: 100px;
 }
 .hero__enter__btn{
+    cursor: pointer;
     padding: 10px 20px ;
     color: rebeccapurple;
     background-color: black;
     flex-grow: 1;
+}
+.about{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(3, 3, 27);
+
+}
+.biography__modal{
+    background-color: rgb(12, 8, 8);
+    padding: 5px;
+    border-radius: 5px;
+    color: grey;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    box-shadow: -3px 0px 6px 6px;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    transform: translateY(-1300px);
+    z-index: 10;
+}
+.biography__modal__open{
+    padding: 5px;
+    border-radius: 5px;
+    color: grey;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    box-shadow: -3px 0px 6px 6px;
+    position: fixed;
+    left: 50%;
+    margin-left: -200px;
+    transition: 0.5s;
+    margin-top: 90vh;
+    
+}
+.modal__shadow{
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    background-color: rgba(4, 3, 2, 0.486);
+    height: 100%;
+    top:0;
+    left:0;
+}
+.biography__top{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(255, 251, 251);
+}
+.biography__title{
+    color: white;
+    margin: 0 auto;
+    font-weight: bold;
+}
+.biography__top__btn{
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: red;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.biography__middle{
+    padding-top: 50px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+}
+.biography__info{
+    font-size: 15px;
+    font-weight: 200;
+    color: white;
+
+}
+.biography__footer__btn{
+    position: absolute;
+    right:10px;
+    bottom: 10px;
+    padding: 5px 10px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(232, 232, 244);
+    border-radius: 5px;
+    box-shadow: 1px 0px 0 1px;
+    cursor: pointer;
+
+}
+.biography__white__title{
+    color: white;
+    text-align: center;
+    
+}
+.biography__white__btn{
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-left: 46%;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 3px; 
+    
 }

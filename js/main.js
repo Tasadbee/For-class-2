@@ -5,7 +5,9 @@ var elNavLink1 = document.querySelector('.nav__item__link1')
 var elNavLink2 = document.querySelector('.nav__item__link2')
 var elNavLink3 = document.querySelector('.nav__item__link3')
 var elNavLink4 = document.querySelector('.nav__item__link4')
-
+var elModal = document.querySelector('.biography__modal')
+var elBody = document.querySelector('body')
+var elShadow = document.querySelector('.modal__shadow__simple')
 
 function left(){
    elList.style.transform = 'translateX(-400px)' 
@@ -53,4 +55,16 @@ function enter(){
     elNavLink3.style.backgroundColor = 'transparent'
     elNavLink4.style.backgroundColor = 'transparent'
    
+}
+function modalOpen(){
+    elModal.classList.add('biography__modal__open')
+    elShadow.classList.add('modal__shadow')
+    elBody.style.overflow = 'hidden'
+}
+function modalClose(){
+    elModal.classList.remove('biography__modal__open')
+    elShadow.classList.remove('modal__shadow')
+
+    elBody.style.overflow = 'auto'
+
 }

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
@@ -52,10 +54,40 @@
                     <button class="hero__enter__btn" onclick="enter()">2</button>
                     <button class="hero__btn" onclick="right()">3</button>
                 </div>
-                
+
             </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <div class="biography__white">
+                <h2 class="biography__white__title">If you want to know about me, press the button below:</h2>
+                <button class="biography__white__btn" onclick="modalOpen()">Biography</button>
+            </div>
+            <div class="biography__modal ">
+                <div class="biography__top">
+                    <h2 class="biography__title">Biography</h2>
+                    <button class="biography__top__btn" onclick="modalClose()">X</button>
+                </div>
+                <div class="biography__middle">
+                    <p class="biography__info">
+                        My name is Asadbek. I'm 23 years old. I live in Andijan. I study at Andijan State University in
+                        Human resources management field. My field is majorly based on accepting documets of people who
+                        want to work with company and we check them out. Also We check their skils of working, outlook,
+                        self-esteem, self-assurance and we check them wheater they can copy that work or not. So I think
+                        you got enogh information about my study field. After graduation from my university I want to
+                        keep studying in abroud.I haven't have any opinion yet about Which country exactly is. Also Make
+                        I'm going to achieve goals and make my own career there.
+                    </p>
+                </div>
+                <div class="biograph__footer">
+                    <button class="biography__footer__btn" onclick="modalClose()">Close</button>
+                </div>
+            </div>
+            <div class="modal__shadow__simple" onclick="modalClose()"></div>
         </div>
     </section>
 </body>
 <script src="./js/main.js"></script>
+
 </html>
