@@ -8,6 +8,17 @@ var elNavLink4 = document.querySelector('.nav__item__link4')
 var elModal = document.querySelector('.biography__modal')
 var elBody = document.querySelector('body')
 var elShadow = document.querySelector('.modal__shadow__simple')
+var elBlogInp1 = document.querySelector('.blog__input1')
+var elBlogInp2 = document.querySelector('.blog__input2')
+var elBlogInp3 = document.querySelector('.blog__input3')
+var elBlogSelect = document.querySelector('.blog__select')
+var elBlogTitle = document.querySelector('.blog__title')
+
+
+elBlogSelect.value = '+'
+
+
+// var elBlogInp3 = Number
 
 function left(){
    elList.style.transform = 'translateX(-400px)' 
@@ -67,4 +78,14 @@ function modalClose(){
 
     elBody.style.overflow = 'auto'
 
+}
+function sendReset(){
+    if(elBlogInp1.value == elBlogInp1.value.toLowerCase() && elBlogInp2.value == elBlogInp2.value.toLowerCase()){
+        alert('If you left the informations about you correctly, I will call you soon')
+    }
+    
+    elBlogInp1.value = ''
+    elBlogInp2.value = ''
+    elBlogInp3.value = ''
+    elBlogSelect.value = ''
 }

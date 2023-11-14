@@ -20,7 +20,7 @@
                         <a class="nav__item__link" href="#">home</a>
                     </li>
                     <li class="nav__list__item">
-                        <a class="nav__item__link nav__item__link1" href="#">about</a>
+                        <a class="nav__item__link nav__item__link1" href="#about">about</a>
                     </li>
                     <li class="nav__list__item">
                         <a class="nav__item__link nav__item__link2" href="#">blog</a>
@@ -58,7 +58,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="biography__white">
                 <h2 class="biography__white__title">If you want to know about me, press the button below:</h2>
@@ -85,6 +85,24 @@
                 </div>
             </div>
             <div class="modal__shadow__simple" onclick="modalClose()"></div>
+        </div>
+    </section>
+    <section class="blog">
+        <div class="container">
+            <div class="blog__box">
+                <h2 class="blog__title">In order to meet with me, fill out this form please!</h2>
+                <div class="blog__input__box">
+                    <input type="text" placeholder="name" class="blog__input blog__input1">
+                    <input type="text" placeholder="Surname" class="blog__input blog__input2" ><br>
+                    <input type="text" placeholder="Number" class="blog__input blog__input3" >
+                    <select class="blog__select">
+                        <option value="" hidden>Gender</option>
+                        <option value="">Male</option>
+                        <option value="">Female</option>
+                    </select>
+                </div>
+                <button class="blog__btn" onclick="sendReset()">Send</button>
+            </div>
         </div>
     </section>
 </body>

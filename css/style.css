@@ -213,3 +213,72 @@ body{
     box-shadow: 0px 0px 3px 3px; 
     
 }
+.blog{
+    padding: 0;
+    /* height: 400px;     */
+    background-image: url(../img/167520-Las-Vegas-Nevada.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    
+}
+.blog__box{
+    width: 400px;
+    height: 300px;
+    background-color: rgb(10, 10, 17);
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    color: rgb(105, 3, 3);
+    border-radius: 5px;
+    box-shadow: 2px 0px 10px 5px;
+    padding: 5px;
+}
+.blog__title{
+    font-size: 15px;
+    color:  rgb(105, 3, 3) ;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid  rgb(105, 3, 3) ;
+    
+}
+.blog__input__box{
+    margin-top: 30px;
+}
+.blog__input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 3px solid  rgb(105, 3, 3) ;
+    width: 180px;
+    color: rgb(80, 8, 8);
+    margin-top: 20px;
+    background-color: transparent;
+}
+.blog__select{
+    padding: 5px;
+    width: 180px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 3px solid rgb(105, 3, 3) ;
+    color: rgb(170, 148, 148);
+}
+.blog__btn{
+    margin-top: 50px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: white;
+    border: 2px solid rgb(105, 3, 3) ;
+    background-color: transparent;
+    cursor: pointer;
+}
+.blog__btn:hover{
+    background-color: black;
+
+}
+.blog__btn:active{
+    background-color: white;
+    color: black;
+
+}
